@@ -1,0 +1,5 @@
+label_ID,label_color,label_text,label_discription
+1,0x00FF00,Tumor,tumor nuclei
+2,0x0000FF,Lymphocyte,lymphocyte nuclei
+3,0xFF0000,Stroma,stroma nuclei
+3,0xFF0000,Non-lymphocyte stromal other,stroma nuclei
