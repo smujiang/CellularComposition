@@ -20,7 +20,9 @@ for (annotation in annotations)
         int cy = (int)annotation.getROI().y
         hierarchy.getSelectionModel().clearSelection()
         selectObjects{p -> p == annotation}
-        pathOutput = output_dir + File.separator + server.getMetadata().getName().take(server.getMetadata().getName().lastIndexOf('.'))
+        F = new File(server.getMetadata().getPath())
+        print(F.getName().lastIndexOf('.'))
+        pathOutput = output_dir + File.separator + F.getName().take(F.getName().lastIndexOf('.'))
         File newDir = new File(pathOutput)
         if (!newDir.exists()) {
             newDir.mkdirs()
