@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.utils import class_weight, compute_sample_weight
 import pandas as pd
 
-sys.path.append(os.path.abspath('../../Evaluation'))
+sys.path.append(os.path.abspath('../Evaluation'))
 from label_csv_manager import label_color_CSVManager
 import openslide
 

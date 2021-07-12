@@ -1,4 +1,4 @@
-import qupath.lib.gui.scripting.QPEx
+import qupath.lib.gui.QuPathGUI
 import qupath.lib.scripting.QP
 import qupath.lib.roi.ROIs
 import qupath.lib.geom.Point2
@@ -10,23 +10,30 @@ import static com.xlson.groovycsv.CsvParser.parseCsv
 def data_dir = "H:\\OvaryCancer\\PatchClassification\\QuPathMeasurements_for_patchLevel"
 //def data_dir = '/infodev1/non-phi-data/junjiang/OvaryCancer/PatchClassification/QuPathMeasurements_for_patchLevel'
 def server = QP.getCurrentImageData().getServer()
-case_id = server.getMetadata().getName().take(server.getMetadata().getName().lastIndexOf('.'))
+F = new File(server.getMetadata().getPath())
+print(F.getName().lastIndexOf('.'))
+case_id = F.getName().take(F.getName().lastIndexOf('.'))
 print(sprintf("Processing case %s", case_id))
-txt_fn = data_dir + File.separator + case_id + File.separator +"detections_measurements_predictions.txt"
+txt_fn = data_dir + File.separator + case_id + File.separator +"detections_prediction.txt"
 fh = new File(txt_fn)
 def txt_content = fh.getText('utf-8')
 def data_iterator = parseCsv(txt_content, separator: '\t', readFirstLine: false)
 List<Point2> cell_loc_list = []
 List<String> cell_class_list = []
 for (line in data_iterator) {
-    def c_x = line[5] as Double
-    def c_y = line[6] as Double
+//     def c_x = line[5] as Double
+//     def c_y = line[6] as Double
+    def c_x = line[4] as Double
+    def c_y = line[5] as Double
     cell_loc_list.add(new Point2(c_x, c_y))
     cell_class_list.add(line[2])
 }
 
-p_sz_h = server.getPixelCalibration().pixelHeightMicrons //pixel size height
-p_sz_w = server.getPixelCalibration().pixelWidthMicrons //pixel size width
+// p_sz_h = server.getPixelCalibration().pixelHeightMicrons //pixel size height
+// p_sz_w = server.getPixelCalibration().pixelWidthMicrons //pixel size width
+
+p_sz_h = server.getPixelHeightMicrons() //pixel size height
+p_sz_w = server.getPixelWidthMicrons() //pixel size width
 
 def detections = getDetectionObjects()
 def updated_detections = []
