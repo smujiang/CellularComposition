@@ -1,11 +1,11 @@
 # Cellular Composition
 Code in this repo is used to evaluate technical feasibility of using digital pathological approaches to facilitate objective and scalable diagnosis screening for Serous borderline ovarian tumor (SBOT) and high-grade serous ovarian cancer (HGSOC).
 However, the workflow we developed in this work can be easily extended to other cellular analysis.
-You can get more information from our [paper]() and [Youtube video]().
+You can get more information from our [paper](https://www.sciencedirect.com/science/article/pii/S2153353922001468) and [Youtube video]().
 ![framework](./doc/framework.png)
 Figure 1. The proposed workflow for cellular analysis.
 ## load cell classification to QuPath
-
+After cell classification, cells can be loaded into QuPath for visualization.
 ![framework](./doc/cells_animation.gif)
 ## cite our work
 ```
