@@ -4,6 +4,9 @@ However, the workflow we developed in this work can be easily extended to other 
 You can get more information from our [paper]() and [Youtube video]().
 ![framework](./doc/framework.png)
 Figure 1. The proposed workflow for cellular analysis.
+## load cell classification to QuPath
+
+![framework](./doc/cell_classification_animation_10s.gif)
 ## cite our work
 ```
 author = {Jiang, Jun. and Tekin, Burak. and Guo, Ruifeng. and Liu, Hongfang. and Huang, Yajue. and Wang, Chen.},
