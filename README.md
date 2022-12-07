@@ -1,10 +1,15 @@
 # Cellular Composition
-We developed a novel informatics system to facilitate objective and scalable diagnosis screening for serous borderline ovarian tumor (SBOT) and high-grade serous ovarian cancer (HGSOC). The system was built upon Groovy scripts and QuPath to enable interactive annotation and data exchange. Many Groovy modules are included in this repo, including parsing whole slide images annotations, cell segmentation, staining and morphological cellular feature extraction. Though the workflow is design for ovarian tissue, it can be easily extended to other digital pathology analysis.      
-Please refer to our [paper](https://www.sciencedirect.com/science/article/pii/S2153353922001468) to get more details.
+We developed a novel informatics system to facilitate objective and scalable diagnosis screening for serous borderline ovarian tumor (SBOT) and high-grade serous ovarian cancer (HGSOC). The system was built upon Groovy scripts and QuPath to enable interactive annotation and data exchange. Many Groovy modules are included in this repo, including parsing whole slide images annotations, cell segmentation, staining and morphological cellular feature extraction. Though the workflow is design for ovarian tissue classification, it can be easily extended to other digital pathology analysis tasks. Please refer to our [paper](https://www.sciencedirect.com/science/article/pii/S2153353922001468) to get more details.
 ![framework](./doc/framework.png)
 Figure 1. The proposed workflow for cellular analysis.
-## Load cell classification to QuPath
-After cell classification, cells can be loaded into QuPath for visualization.
+## Features
+> Cell annotation and parsing, see [another repo](https://github.com/smujiang/TumorStromaReaction/tree/main/data_processing/tumor_stroma) for regional annotation and parsing   
+> Cell feature extraction and export   
+> Cell classification and abstraction   
+> 
+
+## Added feature
+Load cell classification to QuPath. After cell classification, cells can be loaded into QuPath for visualization.
 ![framework](./doc/cells_animation.gif)
 ## Cite our work
 ```
