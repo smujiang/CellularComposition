@@ -113,9 +113,9 @@ else:
 
 if __name__ == "__main__":
     if machine == "Mac":
-        measurments_data_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
-        data_out_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis"
-        wsi_dir = "/Users/m192500/Dataset/OvaryData/WSIs"
+        measurments_data_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
+        data_out_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis"
+        wsi_dir = "/Users/My_LANID/Dataset/OvaryData/WSIs"
     elif machine == "infodev2":
         measurments_data_root = "/infodev1/non-phi-data/junjiang/OvaryCancer/QuPathMeasurements"
         data_out_root = "/infodev1/non-phi-data/junjiang/OvaryCancer/QuPathMeasurements_analysis"

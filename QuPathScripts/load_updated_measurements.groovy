@@ -6,7 +6,7 @@ import qupath.lib.objects.PathObjects
 import qupath.lib.regions.ImagePlane
 import static com.xlson.groovycsv.CsvParser.parseCsv
 
-//csv = '/Users/m192500/Project/QuPathScripts/locations.csv'
+//csv = '/Users/My_LANID/Project/QuPathScripts/locations.csv'
 def data_dir = "H:\\OvaryCancer\\PatchClassification\\QuPathMeasurements_for_patchLevel"
 //def data_dir = '/infodev1/non-phi-data/junjiang/OvaryCancer/PatchClassification/QuPathMeasurements_for_patchLevel'
 def server = QP.getCurrentImageData().getServer()
