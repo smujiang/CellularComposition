@@ -1,13 +1,17 @@
 # Cellular Composition
-Code in this repo is used to evaluate technical feasibility of using digital pathological approaches to facilitate objective and scalable diagnosis screening for Serous borderline ovarian tumor (SBOT) and high-grade serous ovarian cancer (HGSOC).
-However, the workflow we developed in this work can be easily extended to other cellular analysis.
-You can get more information from our [paper](https://www.sciencedirect.com/science/article/pii/S2153353922001468) and [Youtube video]().
+We developed a novel informatics system to facilitate objective and scalable diagnosis screening for serous borderline ovarian tumor (SBOT) and high-grade serous ovarian cancer (HGSOC). The system was built upon Groovy scripts and QuPath to enable interactive annotation and data exchange. Many Groovy modules are included in this repo, including parsing whole slide images annotations, cell segmentation, staining and morphological cellular feature extraction. Though the workflow is design for ovarian tissue classification, it can be easily extended to other digital pathology analysis tasks. Please refer to our [paper](https://www.sciencedirect.com/science/article/pii/S2153353922001468) to get more details.
 ![framework](./doc/framework.png)
 Figure 1. The proposed workflow for cellular analysis.
-## load cell classification to QuPath
-After cell classification, cells can be loaded into QuPath for visualization.
+## Features
+> Cell annotation and parsing, see [another repo](https://github.com/smujiang/TumorStromaReaction/tree/main/data_processing/tumor_stroma) for regional annotation and parsing   
+> Cell feature extraction and export   
+> Cell classification and abstraction   
+> 
+
+## Added feature
+Load cell classification to QuPath. After cell classification, cells can be loaded into QuPath for visualization.
 ![framework](./doc/cells_animation.gif)
-## cite our work
+## Cite our work
 ```
 author = {Jiang, Jun. and Tekin, Burak. and Guo, Ruifeng. and Liu, Hongfang. and Huang, Yajue. and Wang, Chen.},
 title =  {{Digital pathology-based study of cell- and tissue-level morphologic features in serous borderline ovarian tumor and high-grade serous ovarian cancer}},
