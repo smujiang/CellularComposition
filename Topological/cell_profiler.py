@@ -201,11 +201,11 @@ class GetCellsFromMask:
         return masks
 
 if __name__=="__main__":
-    # img_fn = "/Users/m192500/Dataset/OvaryCancer/CellClassification/ROI_Masks_out_norm/OCMC-001/OCMC-001_63977_28940.jpg"
-    # mask_fn = "/Users/m192500/Dataset/OvaryCancer/512Norm_QBRC_out/OCMC-001/OCMC-001_63977_28940.png"
+    # img_fn = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/ROI_Masks_out_norm/OCMC-001/OCMC-001_63977_28940.jpg"
+    # mask_fn = "/Users/My_LANID/Dataset/OvaryCancer/512Norm_QBRC_out/OCMC-001/OCMC-001_63977_28940.png"
 
-    img_fn = "/Users/m192500/Dataset/OvaryData/temp/OurAnnotation/ROI_Masks_out/OCMC-004/OCMC-004_15187_59298.jpg"
-    mask_fn = "/Users/m192500/Dataset/OvaryData/temp/OurAnnotation/ROI_Masks_out/OCMC-004/OCMC-004_15187_59298-mask.png"
+    img_fn = "/Users/My_LANID/Dataset/OvaryData/temp/OurAnnotation/ROI_Masks_out/OCMC-004/OCMC-004_15187_59298.jpg"
+    mask_fn = "/Users/My_LANID/Dataset/OvaryData/temp/OurAnnotation/ROI_Masks_out/OCMC-004/OCMC-004_15187_59298-mask.png"
 
     QuPath_csv = "../Evaluation/label_color_table_QuPath_update.csv"
     label_color_man = label_color_CSVManager(QuPath_csv)

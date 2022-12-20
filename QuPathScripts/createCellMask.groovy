@@ -29,7 +29,7 @@ def annotations = hierarchy.getFlattenedObjectList(null).findAll {it.isAnnotatio
 // Define downsample value for export resolution & output directory, creating directory if necessary
 def downsample = 1.0
 // modify this root_dir to specify where you would like to save your export
-//def pathOutput = "/Users/m192500/Dataset/Annotations/QP1.2_annotation/output"
+//def pathOutput = "/Users/My_LANID/Dataset/Annotations/QP1.2_annotation/output"
 def pathOutput = "H:\\OvarianCancer\\ForPatchClassification"
 
 List<String> class_txt_list = ["Tumor", "Lymphocyte", "Stroma", "Macrophage", "Karyorrhexis", "RBC"]

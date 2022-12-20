@@ -49,11 +49,11 @@ def Load_As = "Annotation"  // could also be "Detection"
 
 def hierarchy = QPEx.getCurrentHierarchy()
 
-//img_fn = "/Users/m192500/Dataset/OvaryData/QBRC_all/512/OCMC-001_mask/OCMC-001_35972_33137.png"
+//img_fn = "/Users/My_LANID/Dataset/OvaryData/QBRC_all/512/OCMC-001_mask/OCMC-001_35972_33137.png"
 //print(img_fn)
 //mask_dir = "H:\\OvaryCancer\\CellClassification\\ROI_Masks_out_norm_out\\OCMC-020"
-mask_dir = "/Users/m192500/Dataset/OvaryCancer/CellClassification/ROI_Masks_out/OCMC-016"
-//mask_dir = "/Users/m192500/Dataset/OvaryData/Patches_out"
+mask_dir = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/ROI_Masks_out/OCMC-016"
+//mask_dir = "/Users/My_LANID/Dataset/OvaryData/Patches_out"
 def dirMask = new File(mask_dir)
 if (!dirMask.isDirectory()) {
     print dirMask + ' is not a valid directory!'

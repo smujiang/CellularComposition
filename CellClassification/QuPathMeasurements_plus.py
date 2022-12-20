@@ -71,9 +71,9 @@ def save_to_QuPath_points(color, points, save_to):
 # EvaluationTask = "high_grade"
 EvaluationTask = "all"  # "high_grade" , "borderline" or "all"
 if __name__ == "__main__":
-    measurments_data_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
+    measurments_data_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
 
-    data_out_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis"
+    data_out_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis"
 
     if EvaluationTask == "all":
         plt_title = "All Cases"

@@ -4,7 +4,7 @@ import qupath.lib.scripting.QP
 //Use either "project" OR "outputFolder" to determine where your detection files will go
 def project = QuPathGUI.getInstance().getProject().getBaseDirectory()
 
-//output_dir = "/Users/m192500/Dataset/OvaryCancer/CellClassification"
+//output_dir = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification"
 output_dir = "H:\\OvaryCancer\\ImageData\\QuPathMeasurements"
 
 def imageData = QP.getCurrentImageData()

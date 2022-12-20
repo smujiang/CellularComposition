@@ -81,13 +81,13 @@ else:
 
 if __name__ == "__main__":
     if machine == "Mac":
-        txt_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
+        txt_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements"
         QuPath_csv = "../Evaluation/label_color_table_QuPath_update.csv"
-        img_data_root = "/Users/m192500/Dataset/OvaryCancer/CellClassification/ROI_Masks_out_norm"
-        model_out_root = "/Users/m192500/Dataset/OvaryCancer/PatchClassification"
-        data_out_file = "/Users/m192500/Dataset/OvaryCancer/PatchClassification/train_test_data.npz"
-        # mask_fn = "/Users/m192500/Dataset/OvaryCancer/512Norm_QBRC_out/OCMC-001/OCMC-001_59333_55264.png"
-        wsi_root = "/Users/m192500/Dataset/OvaryData/WSIs"
+        img_data_root = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification/ROI_Masks_out_norm"
+        model_out_root = "/Users/My_LANID/Dataset/OvaryCancer/PatchClassification"
+        data_out_file = "/Users/My_LANID/Dataset/OvaryCancer/PatchClassification/train_test_data.npz"
+        # mask_fn = "/Users/My_LANID/Dataset/OvaryCancer/512Norm_QBRC_out/OCMC-001/OCMC-001_59333_55264.png"
+        wsi_root = "/Users/My_LANID/Dataset/OvaryData/WSIs"
     elif machine == "infodev2":
         txt_root = "/infodev1/non-phi-data/junjiang/OvaryCancer/PatchClassification/QuPathMeasurements_for_patchLevel"
         QuPath_csv = "../Evaluation/label_color_table_QuPath_update.csv"

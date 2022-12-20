@@ -9,8 +9,8 @@ import qupath.lib.objects.PathAnnotationObject
 import qupath.lib.objects.classes.PathClassFactory
 import static com.xlson.groovycsv.CsvParser.parseCsv
 
-//csv = '/Users/m192500/Project/QuPathScripts/locations.csv'
-//def data_dir = '/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis'
+//csv = '/Users/My_LANID/Project/QuPathScripts/locations.csv'
+//def data_dir = '/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis'
 //def data_dir = '/infodev1/non-phi-data/junjiang/OvaryCancer/PatchClassification'
 String data_dir = 'H:\\OvaryCancer\\PatchClassification'
 

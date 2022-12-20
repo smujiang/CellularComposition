@@ -6,8 +6,8 @@ import qupath.lib.objects.PathObjects
 import qupath.lib.regions.ImagePlane
 import static com.xlson.groovycsv.CsvParser.parseCsv
 
-//csv = '/Users/m192500/Project/QuPathScripts/locations.csv'
-def data_dir = '/Users/m192500/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis'
+//csv = '/Users/My_LANID/Project/QuPathScripts/locations.csv'
+def data_dir = '/Users/My_LANID/Dataset/OvaryCancer/CellClassification/QuPathMeasurements_analysis'
 def server = QP.getCurrentImageData().getServer()
 case_id = server.getMetadata().getName().take(server.getMetadata().getName().lastIndexOf('.'))
 csv_fn = data_dir + File.separator + case_id +"_erro_loc.csv"

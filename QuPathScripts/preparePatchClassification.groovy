@@ -124,7 +124,7 @@ runPlugin('qupath.imagej.detect.cells.WatershedCellDetection',
 ////////////////////////////////////////////
 // Save detection measurements
 ////////////////////////////////////////////
-//output_dir = "/Users/m192500/Dataset/OvaryCancer/CellClassification"
+//output_dir = "/Users/My_LANID/Dataset/OvaryCancer/CellClassification"
 output_dir = "H:\\OvaryCancer\\ImageData\\QuPathMeasurements_for_patchLevel"
 
 pathOutput = output_dir + File.separator + server.getMetadata().getName().take(server.getMetadata().getName().lastIndexOf('.'))
